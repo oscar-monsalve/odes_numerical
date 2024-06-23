@@ -20,7 +20,7 @@ ODE solution with the solvers "odeint" and "solve_ivp":
 
 <figure>
     <img src="images/01_ode_linear.png" alt="ode_linear" width="400" height="auto"/>
-    <figcaption>Figure 1. Velocity considering air friction while falling.</figcaption>
+    <figcaption>Figure 1. Velocity as a function of time considering air friction while falling.</figcaption>
 </figure>
 
 
