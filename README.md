@@ -10,7 +10,7 @@ where $v$ is velocity, $t$ is time, and $\alpha,\\, \beta$ are constants.
 
 First, we write the ODE in the following form:
 
-$$\displaystyle \frac{dv}{dt} = f(t\\, v)$$
+$$\displaystyle \frac{dv}{dt} = f(t\\, v)$"$
 
 In other words, "the derivative of $v$ equals a function that depends on the velocity $v$ and time $t$". For this case, we can write it as:
 
@@ -25,6 +25,23 @@ ODE solution with the solvers "odeint" and "solve_ivp":
 
 
 ## 2. Coupled first order ODE's
+
+The following are the two coupled fist-order linear differential equations. The are coupled because the two equations depend on each other,
+with the terms $y_1,\\,y_2$.
+
+$$y_1' = y_1 + y_2^2 + 3x,\\; y_1(0) = 0$$
+
+$$y_2' = 3y_1 + y_2^3 - \cos(x),\\; y_2(0) = 0$$
+
+The equation system can be rewritten as a vector. Letting $S = (y_1,\\; y_2$ we need to write a function that returns $dS/dx = dy_1/dx,\\; dy_2/dx$.
+The function $dS/dx$ can take in $S = (y_1,\\; y_2$ and $x$. In vector form we then have:
+
+$$
+\vec{S} = \begin{bmatrix}
+y_1 \\
+y_2
+\end{bmatrix}
+$$
 
 
 ## 3. Higher order ODE's
