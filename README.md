@@ -81,11 +81,11 @@ $$\dot{x} = v$$
 $$\dot{v} = -v^2 + \sin(x)$$
 
 For this system of ODE's, we are solving for $v$ and $x$. Additionally, it requires initial conditions of $x_0\\; \mathrm{and}\\; v_0$. For example,
-$x_0 = 0$ and $v_0 = 5$.
+$x(0) = 0$ and $v(0) = 5$.
 
 See the file "03_second_order_ode.py" for the programming of this problem.
 
 <figure>
     <img src="images/03_second_order_ode.png" alt="second_order_ode" width="400" height="auto"/>
-    <figcaption>Figure 2. Solution of a second order ODE divided into two first oder ODE's.</figcaption>
+    <figcaption>Figure 3. Solution of a second order ODE divided into two first oder ODE's.</figcaption>
 </figure>
