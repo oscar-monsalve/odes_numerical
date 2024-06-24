@@ -50,5 +50,12 @@ y_1 + y_2^2 + 3x \\
 \end{bmatrix}
 $$
 
+Now, the vector function $d\vec{S}/dx$ can be programmed defining a function for "dSdx" as $\vec{f}(x,\\; \vec{S})$. See the file "02_coupled_ode.py".
+
+<figure>
+    <img src="images/02_coupled_linear_ode.png" alt="coupled_linear_linear" width="400" height="auto"/>
+    <figcaption>Figure 2. y1 and y2 solutions for the coupled linear ODE's.</figcaption>
+</figure>
+
 
 ## 3. Higher order ODE's
