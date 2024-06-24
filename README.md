@@ -40,6 +40,13 @@ $$
 \vec{S} = \begin{bmatrix}
 y_1 \\
 y_2
+\end{bmatrix} \Longrightarrow
+\displaystyle \frac{d\vec{S}}{dx} = \vec{f}(x,\\;\vec{S}) = \vec{f}(x,\\;y_1,\\; y_2) = \begin{bmatrix}
+y_1' \\
+y_2'
+\end{bmatrix} = \begin{bmatrix}
+y_1 + y_2^2 + 3x \\
+3y_1 + y_2^3 - \cos(x)
 \end{bmatrix}
 $$
 
