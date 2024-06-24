@@ -58,4 +58,34 @@ Now, the vector function $d\vec{S}/dx$ can be programmed defining a function for
 </figure>
 
 
-## 3. Higher order ODE's
+## 3. Second order ODE's
+
+**Python does not have functions to directly solve second or higher order ODE's**
+
+**However, any second order ODE can be converted into two first order ODE's**
+
+Consider the following second order ODE:
+
+$$\ddot{x} = -\dot{x}^2 + \sin(x)$$
+
+We can convert this into a system of two first order ODE's as follows:
+
+- Take $x$, which is what we're trying to solve for. Then, define $\dot{x} = v$, so that $v$ becomes a new variable.
+- Note that $\dot{x} = v$ is one differential equation.
+- Since $\dot{v} = \ddot{x} = -\dot{x}^2 + \sin(x) = -v^2 + \sin(x)$, we get another differential equation.
+
+Then, the system of two first order coupled ODE's is:
+
+$$\dot{x} = v$$
+
+$$\dot{v} = -v^2 + \sin(x)$$
+
+For this system of ODE's, we are solving for $v$ and $x$. Additionally, it requires initial conditions of $x_0\\; \mathrm{and}\\; v_0$. For example,
+$x_0 = 0$ and $v_0 = 5$.
+
+See the file "03_second_order_ode.py" for the programming of this problem.
+
+<figure>
+    <img src="images/03_second_order_ode.png" alt="second_order_ode" width="400" height="auto"/>
+    <figcaption>Figure 2. Solution of a second order ODE divided into two first oder ODE's.</figcaption>
+</figure>

@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 from scipy.integrate import odeint
 
 
-def dSdx(x, S):
+def dSdx(x: list, S: list) -> list:
     y1, y2 = S  # Extract the S vector components
     return [y1 + y2**2 + 3*x,
             3*y1 + y2**3 - np.cos(x)]
