@@ -162,3 +162,24 @@ See the file "04_third_order_coupled_ode.py" for the programming of this problem
     <img src="images/04_third_order_coupled_odes.png" alt="04_third_order_coupled_odes" width="400" height="auto"/>
     <figcaption>Figure 4. Solution for the two coupled third order linear ODE's.</figcaption>
 </figure>
+
+
+# Damped pendulum (No drive force)
+
+The motion of a damped pendulum is modeled by a second-order non-linear differential equation as follows:
+
+$$\ddot{\theta} + C\dot{\theta} + \displaystyle \frac{g}{L}\sin(\theta) = 0$$
+
+where $\theta$ is the pendulum angle, $C = k/mL$ is the damping coefficient, $k$ the friction coefficient, $m$ the
+pendulum mass, $g$ the gravitational constant, and $L$ the distance from the pivoting point to the mass center.
+
+We want to rewrite the ODE using the state-space representation to create a two-coupled first-order equation system:
+
+- $x_1 = \theta$
+- $x_2 = \dot{\theta}$
+
+Then, the two coupled ODE's are:
+
+$$\dot{x}_1 = x_2$$
+
+$$\dot{x}_2 = -C\dot{x}_2 - k\sin{x_1}$$
