@@ -33,8 +33,9 @@ $$y_1' = y_1 + y_2^2 + 3x,\\; y_1(0) = 0$$
 
 $$y_2' = 3y_1 + y_2^3 - \cos(x),\\; y_2(0) = 0$$
 
-The equation system can be rewritten as a vector. Letting $S = (y_1,\\; y_2$ we need to write a function that returns $dS/dx = dy_1/dx,\\; dy_2/dx$.
-The function $dS/dx$ can take in $S = (y_1,\\; y_2$ and $x$. In vector form we then have:
+The equation system can be rewritten as a vector. Letting $S = (y_1,\\; y_2)$ we need to write a function that
+returns $dS/dx = (dy_1/dx,\\; dy_2/dx)$. The function $dS/dx$ can take in $S = y_1,\\; y_2$ and $x$. In vector form
+we then have
 
 $$
 \vec{S} = \begin{bmatrix}
