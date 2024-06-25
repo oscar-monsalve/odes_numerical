@@ -168,12 +168,19 @@ See the file "04_third_order_coupled_ode.py" for the programming of this problem
 
 The motion of a damped pendulum is modeled by a second-order non-linear differential equation as follows:
 
-$$\ddot{\theta} + C\dot{\theta} + \displaystyle \frac{g}{L}\sin(\theta) = 0$$
+$$\ddot{\theta} + C_1\dot{\theta} + C_2\sin(\theta) = 0$$
 
-where $\theta$ is the pendulum angle, $C = k/mL$ is the damping coefficient, $k$ the friction coefficient, $m$ the
-pendulum mass, $g$ the gravitational constant, and $L$ the distance from the pivoting point to the mass center.
+where
 
-We want to rewrite the ODE using the state-space representation to create a two-coupled first-order equation system:
+- $\theta$ is the angle of the pendulum with respect to the direction of gravity.
+- $m$ is the mass of the pendulum (pendulum rod's mass is assumed to be zero).
+- $g$ is the gravitational acceleration.
+- $C_1 = k/mL$ is the damping coefficient.
+- $k$ is the coefficient of friction at the pivot point.
+- $L$ is the radius of the pendulum (to the center of gravity of the mass $m$).
+- $C_2 = g/L$.
+
+We want to rewrite the ODE using the state-space representation to create a two-coupled first-order equation system using the following variables:
 
 - $x_1 = \theta$
 - $x_2 = \dot{\theta}$
@@ -182,10 +189,35 @@ Then, the two coupled ODE's are:
 
 $$\dot{x}_1 = x_2$$
 
-$$\dot{x}_2 = -C\dot{x}_2 - k\sin{x_1}$$
+$$\dot{x}_2 = -C_1 x_2 - C_2\sin(x_1)$$
 
-where,
+where
 
-$C = \displaystyle \frac{k}{mL}$.
+- $x_1 = \theta$ is the angle of the pendulum.
+- $x_2 = \dot{x}_1 = \omega$ is the rotational velocity of the pendulum.
+- $\dot{x}_2 = \ddot{x}_1 = \alpha$ is the rotational acceleration of the pendulum.
 
-$k = \displaystyle \frac{g}{L}$
+Now, we have two coupled first order ODE's. We want to solve for $x_1,\\; x_2$. Rewriting them in vector form we have the following:
+
+$$
+\vec{S} = \begin{bmatrix}
+x_1 \\
+x_2
+\end{bmatrix} \Longrightarrow
+\displaystyle \frac{d\vec{S}}{dt} = \begin{bmatrix}
+\dot{x_1} \\
+\dot{x_2}
+\end{bmatrix} = \begin{bmatrix}
+x_2 \\
+-C_1 x_2 - C_2\sin(x_1)
+\end{bmatrix}
+$$
+
+There will be needed two initial conditions. For this example, the initial conditions are:
+
+- $x_1(0) = \pi/4\\; rad$, at t=0, the pendulum angle is $\pi/4\\; rad$.
+
+- $x_2(0) = 0$, at t=0, the pendulum angular velocity is zero.
+
+See the file "05_damped_pendulum.py" for the programming of this problem. The solutions are:
+
