@@ -91,7 +91,7 @@ See the file "03_second_order_ode.py" for the programming of this problem.
 </figure>
 
 
-## 3. Two coupled third order ODE's
+## 4. Two coupled third order ODE's
 
 For this we have a two-coupled third-order ODE's system:
 
@@ -164,7 +164,7 @@ See the file "04_third_order_coupled_ode.py" for the programming of this problem
 </figure>
 
 
-# Damped pendulum (No drive force)
+# 5. Damped pendulum (No drive force)
 
 The motion of a damped pendulum is modeled by a second-order non-linear differential equation as follows:
 
