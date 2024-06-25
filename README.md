@@ -221,3 +221,7 @@ There will be needed two initial conditions. For this example, the initial condi
 
 See the file "05_damped_pendulum.py" for the programming of this problem. The solutions are:
 
+<figure>
+    <img src="images/05_damped_pendulum.png" alt="damped_pendulum" width="400" height="auto"/>
+    <figcaption>Figure 5. Solution of a damped pendulum with no external drive force.</figcaption>
+</figure>
