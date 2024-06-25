@@ -219,7 +219,7 @@ There will be needed two initial conditions. For this example, the initial condi
 
 - $x_2(0) = 0$, at t=0, the pendulum angular velocity is zero.
 
-See the file "05_damped_pendulum.py" for the programming of this problem. The solutions are:
+- See the file "05_damped_pendulum.py" for the programming of this problem. The solutions are:
 
 <figure>
     <img src="images/05_damped_pendulum.png" alt="damped_pendulum" width="400" height="auto"/>
