@@ -183,3 +183,9 @@ Then, the two coupled ODE's are:
 $$\dot{x}_1 = x_2$$
 
 $$\dot{x}_2 = -C\dot{x}_2 - k\sin{x_1}$$
+
+where,
+
+$C = \displaystyle \frac{k}{mL}$.
+
+$k = \displaystyle \frac{g}{L}$
