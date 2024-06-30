@@ -4,6 +4,9 @@ import numpy as np
 import matplotlib.pyplot as plt
 from scipy.integrate import odeint
 from scipy.integrate import solve_ivp
+import scienceplots
+
+plt.style.use(["science", "notebook", "grid"])
 
 
 # Define the right side of the ODE when is written is the form "dv/dt = ax^2 + b"
