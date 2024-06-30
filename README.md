@@ -188,4 +188,35 @@ where,
 
 $C = \displaystyle \frac{k}{mL}$.
 
+<<<<<<< HEAD
 $k = \displaystyle \frac{g}{L}$
+=======
+Now, we have two coupled first order ODE's. We want to solve for $x_1,\\; x_2$. Rewriting them in vector form we have the following:
+
+$$
+\vec{S} = \begin{bmatrix}
+x_1 \\
+x_2
+\end{bmatrix} \Longrightarrow
+\displaystyle \frac{d\vec{S}}{dt} = \begin{bmatrix}
+\dot{x_1} \\
+\dot{x_2}
+\end{bmatrix} = \begin{bmatrix}
+x_2 \\
+-C_1 x_2 - C_2\sin(x_1)
+\end{bmatrix}
+$$
+
+There will be needed two initial conditions. For this example, the initial conditions are:
+
+- $x_1(0) = \pi/4\\; rad$, at t=0, the pendulum angle is $\pi/4\\; rad$.
+
+- $x_2(0) = 0$, at t=0, the pendulum angular velocity is zero.
+
+- See the file "05_damped_pendulum.py" for the programming of this problem. The solutions are:
+
+<figure>
+    <img src="images/05_damped_pendulum.png" alt="damped_pendulum" width="400" height="auto"/>
+    <figcaption>Figure 5. Solution of a damped pendulum with no external drive force.</figcaption>
+</figure>
+>>>>>>> 5ae5cd88b9d3e0374090893c43f069cf6ee9430f
