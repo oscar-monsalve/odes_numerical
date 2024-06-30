@@ -188,9 +188,8 @@ where,
 
 $C = \displaystyle \frac{k}{mL}$.
 
-<<<<<<< HEAD
 $k = \displaystyle \frac{g}{L}$
-=======
+
 Now, we have two coupled first order ODE's. We want to solve for $x_1,\\; x_2$. Rewriting them in vector form we have the following:
 
 $$
@@ -219,4 +218,3 @@ There will be needed two initial conditions. For this example, the initial condi
     <img src="images/05_damped_pendulum.png" alt="damped_pendulum" width="400" height="auto"/>
     <figcaption>Figure 5. Solution of a damped pendulum with no external drive force.</figcaption>
 </figure>
->>>>>>> 5ae5cd88b9d3e0374090893c43f069cf6ee9430f
